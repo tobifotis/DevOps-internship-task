@@ -18,7 +18,7 @@ Gain hands-on experience with Git and GitHub fundamentals, including branching, 
 
 1. Create a GitHub account.
 2. Create a new GitHub repository.
-3. Create a `Task1` folder in the `master` branch and add `Task1/README.md`.
+3. Create a `Task1` folder in the `main` branch and add `Task1/README.md`.
 4. Create a `dev` branch and push a test file.
 5. Create a feature branch named `%USERNAME-new_feature`.
 6. Add a `README.md` file to the feature branch.
