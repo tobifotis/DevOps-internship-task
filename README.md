@@ -26,9 +26,9 @@ Gain hands-on experience with Git and GitHub fundamentals, including branching, 
 8. Add a `.gitignore` file to ignore files starting with `.`.
 9. Commit and push changes to GitHub.
 10. Open a Pull Request to merge the feature branch into `dev`.
-11. Merge `dev` into `master` via Pull Request.
+11. Merge `dev` into `main` via Pull Request.
 12. Modify `README.md` in the feature branch, commit the change, and revert the last commit.
-13. Generate a `git log` and save the output to `log.txt` in the `master` branch.
+13. Generate a `git log` and save the output to `log.txt` in the `main` branch.
 14. Delete the local and remote feature branch.
 15. Document all Git commands used in `git_commands.md` (in the `dev` branch).
 16. Share the repository link with the mentor.
