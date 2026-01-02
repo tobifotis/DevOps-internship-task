@@ -11,7 +11,7 @@ repository setup, branching strategies, commits, pull requests, and branch manag
 The following commands were used to create the Task1 directory and push the initial README file to the main branch.
 
 <p align="center">
-  <img src="../../assets/images/1.png" width="800" />
+  <img src="../assets/images/1.png" width="800" />
 </p>
 
 ---
@@ -20,7 +20,7 @@ The following commands were used to create the Task1 directory and push the init
 A development branch was created to simulate active development work.
 
 <p align="center">
-  <img src="../../assets/images/2.png" width="800" />
+  <img src="../assets/images/2.png" width="800" />
 </p>
 
 ---
@@ -29,7 +29,7 @@ A development branch was created to simulate active development work.
 A feature branch named `%USERNAME-new_feature` was created to isolate changes.
 
 <p align="center">
-  <img src="../../assets/images/3.png" width="800" />
+  <img src="../assets/images/3.png" width="800" />
 </p>
 
 ---
@@ -38,7 +38,7 @@ A feature branch named `%USERNAME-new_feature` was created to isolate changes.
 A `.gitignore` file was added to ignore all dotfiles except `.gitignore` itself.
 
 <p align="center">
-  <img src="../../assets/images/4.png" width="800" />
+  <img src="../assets/images/4.png" width="800" />
 </p>
 
 ---
@@ -47,12 +47,12 @@ A `.gitignore` file was added to ignore all dotfiles except `.gitignore` itself.
 Pull Requests were used to:
 - Merge the feature branch into `dev`
 <p align="center">
-  <img src="../../assets/images/5-a.png" width="800" />
+  <img src="../assets/images/5-a.png" width="800" />
 </p>
 
 - Merge `dev` into `main`
 <p align="center">
-  <img src="../../assets/images/5-b.png" width="800" />
+  <img src="../assets/images/5-b.png" width="800" />
 </p>
 
 This ensures a clean and reviewable workflow.
@@ -63,7 +63,7 @@ This ensures a clean and reviewable workflow.
 A commit made on the feature branch was reverted using `git revert` to demonstrate safe undo operations.
 
 <p align="center">
-  <img src="../../assets/images/6.png" width="800" />
+  <img src="../assets/images/6.png" width="800" />
 </p>
 
 ---
