@@ -4,7 +4,7 @@ This repository contains tasks completed as part of my internship as a Junior De
 
 ---
 
-## 📌 [Task 1: Git & GitHub](https://github.com/tobifotis)
+## 📌 [Task 1: Git & GitHub](https://github.com/tobifotis/DevOps-internship-task/tree/main/Git-Github)
 
 **Objective**  
 Gain hands-on experience with Git and GitHub fundamentals, including branching, commits, pull requests, and repository management.
