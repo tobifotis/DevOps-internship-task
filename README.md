@@ -35,7 +35,7 @@ Gain hands-on experience with Git and GitHub fundamentals, including branching, 
 
 ---
 
-## Task 2: Linux Fundamentals
+## [Task 2: Linux Fundamentals](https://github.com/tobifotis/DevOps-internship-task/tree/main/Linux)
 
 **Objective**  
 Develop a solid foundation in Linux command-line usage, including navigation, file and directory management, permissions awareness, wildcards, and safe deletion practices.
