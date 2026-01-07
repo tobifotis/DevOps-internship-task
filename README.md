@@ -1,6 +1,6 @@
-# DevOps Internship Tasks – Sigasi
+# DevOps Internship Tasks – Tyler Technologies
 
-This repository contains tasks completed as part of my internship as a Junior DevOps Engineer at Sigasi.
+This repository contains tasks completed as part of my winter internship as a Junior DevOps Engineer at Tyler Technologies.
 
 ---
 
