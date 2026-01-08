@@ -4,7 +4,7 @@ This repository contains tasks completed as part of my winter internship as a Ju
 
 ---
 
-## [Task 1: Git & GitHub](https://github.com/tobifotis/DevOps-internship-task/tree/main/Git-Github)
+# [Task 1: Git & GitHub](https://github.com/tobifotis/DevOps-internship-task/tree/main/Git-Github)
 
 **Objective**  
 Gain hands-on experience with Git and GitHub fundamentals, including branching, commits, pull requests, and repository management.
@@ -14,7 +14,7 @@ Gain hands-on experience with Git and GitHub fundamentals, including branching, 
 
 ---
 
-### Tasks:
+## Tasks:
 
 1. Create a GitHub account.
 2. Create a new GitHub repository.
@@ -35,7 +35,7 @@ Gain hands-on experience with Git and GitHub fundamentals, including branching, 
 
 ---
 
-## [Task 2: Linux Fundamentals](https://github.com/tobifotis/DevOps-internship-task/tree/main/Linux)
+# [Task 2: Linux Fundamentals](https://github.com/tobifotis/DevOps-internship-task/tree/main/Linux)
 
 **Objective**  
 Develop a solid foundation in Linux command-line usage, including navigation, file and directory management, permissions awareness, wildcards, and safe deletion practices.
@@ -46,9 +46,9 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-### Tasks:
+## Tasks:
 
-#### 🔹 Part A: Understanding the Linux Environment
+### 🔹Understanding the Linux Environment
 
 1. Open the terminal.
 2. Display the current working directory using `pwd`.
@@ -61,7 +61,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part B: Navigating the File System
+### 🔹Navigating the File System
 
 9. Navigate to the root directory using `cd /`.
 10. List top-level system directories.
@@ -72,7 +72,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part C: Creating Directories and Files
+### 🔹Creating Directories and Files
 
 15. Create two directories:
     - `Folder1`
@@ -87,7 +87,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part D: Moving Files and Using Wildcards
+### 🔹Moving Files and Using Wildcards
 
 19. Move `bale.txt` into `Folder1`.
 20. Move `ball.txt` into `Folder1`.
@@ -97,7 +97,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part E: Absolute, Relative, and Home Paths
+### 🔹Absolute, Relative, and Home Paths
 
 24. Change directory into `Folder1`.
 25. List files inside `Folder1`.
@@ -108,7 +108,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part F: Hidden Files and Permissions
+### 🔹Hidden Files and Permissions
 
 27. Create a hidden file using `touch .balehidden.txt`.
 28. Display hidden files using `ls -la`.
@@ -117,7 +117,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part G: Wildcard Pattern Matching
+### 🔹Wildcard Pattern Matching
 
 31. Use `?` to match filenames of equal length (example: `b??l.txt`).
 32. Use bracket patterns to match specific characters (example: `b[ao][wl]l.txt`).
@@ -125,7 +125,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part H: Removing and Renaming Directories
+### 🔹Removing and Renaming Directories
 
 34. Create a new directory `Folder3`.
 35. Rename `Folder3` to `Jason` using `mv`.
@@ -135,10 +135,82 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-#### 🔹 Part I: Verification and Cleanup
+### 🔹Verification and Cleanup
 
 39. Verify final directory state using `ls`.
 40. Return to the home directory using `cd ~`.
 
+---
 
+# [Task 3: AWS]()
+**Objective**  
+Establish a secure AWS account foundation following best practices, configure IAM access, set up the AWS CLI, and launch, access, and clean up a test EC2 instance using both console-based and SSH-based methods.
 
+**Reference**  
+- AWS Account Setup: https://www.youtube.com/watch?v=CjKhQoYeR4Q&t=105s 
+- AWS Services Explained: https://www.youtube.com/watch?v=JIbIYCM48to
+
+---
+
+## Tasks
+
+### 🔹Root Account Security & Billing Setup
+1. Create an AWS account.
+2. Sign in as the root user.
+3. Enable Multi-Factor Authentication (MFA) for the root user.
+4. Configure billing information and payment method.
+5. Set up billing alerts and cost monitoring.
+
+---
+
+### 🔹IAM Admin User Setup
+6. Create an IAM admin user.
+7. Attach the `AdministratorAccess` policy to the admin user.
+8. Enable MFA for the IAM admin user.
+9. Sign out from the root user.
+10. Sign in using the IAM admin account.
+
+---
+
+### 🔹AWS CLI Installation & Configuration
+11. Install the AWS CLI on the local machine.
+12. Configure the AWS CLI using the IAM admin user’s access keys:
+   ```bash
+   aws configure
+   ```
+13. Verify CLI authentication:
+   ```bash
+   aws sts get-caller-identity
+   ```
+
+---
+
+### 🔹EC2 Instance Creation
+14. Create a test EC2 instance using the AWS Management Console.
+15. Generate and download an EC2 key pair (`.pem` file).
+16. Configure a security group allowing SSH access (port 22).
+17. Launch the EC2 instance.
+
+---
+
+### 🔹Connecting to EC2
+18. Connect to the instance using EC2 Instance Connect.
+19. Connect to the instance using an SSH client:
+   ```bash
+   ssh -i <keypair>.pem ec2-user@<public-ip>
+   ```
+20. Verify successful login and basic shell access.
+
+---
+
+### 🔹Cleanup & Cost Management
+21. Exit the EC2 instance.
+22. Terminate the EC2 instance.
+23. Confirm that no running EC2 resources remain.
+
+---
+
+## Note!
+- The root account is used **only** for billing and account-level configuration.
+- All operational tasks are performed using an IAM admin user.
+- All resources are terminated to avoid unnecessary costs.
