@@ -142,7 +142,7 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-# [Task 3: AWS]()
+# [Task 3: AWS](https://github.com/tobifotis/aws-terraform-dev-environment)
 **Objective**  
 Establish a secure AWS account foundation following best practices, configure IAM access, set up the AWS CLI, and launch, access, and clean up a test EC2 instance using both console-based and SSH-based methods.
 
