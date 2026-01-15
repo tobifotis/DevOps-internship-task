@@ -142,9 +142,9 @@ Develop a solid foundation in Linux command-line usage, including navigation, fi
 
 ---
 
-# [Task 3: AWS](https://github.com/tobifotis/aws-terraform-dev-environment)
+# [Task 3: AWS Cloud](https://github.com/tobifotis/DevOps-internship-task/tree/main/AWS-Cloud)
 **Objective**  
-Establish a secure AWS account foundation following best practices, configure IAM access, set up the AWS CLI, and launch, access, and clean up a test EC2 instance using both console-based and SSH-based methods.
+The objective of this task is to demonstrate an understanding of basic AWS cloud infrastructure, including how to create and manage EC2 instances, securely connect to them, configure networking, and deploy a simple service that works both internally and from the internet.
 
 **Reference**  
 - AWS Account Setup: https://www.youtube.com/watch?v=CjKhQoYeR4Q&t=105s 
@@ -152,65 +152,18 @@ Establish a secure AWS account foundation following best practices, configure IA
 
 ---
 
-## Tasks
+## Tasks:
 
-### 🔹Root Account Security & Billing Setup
-1. Create an AWS account.
-2. Sign in as the root user.
-3. Enable Multi-Factor Authentication (MFA) for the root user.
-4. Configure billing information and payment method.
-5. Set up billing alerts and cost monitoring.
-
----
-
-### 🔹IAM Admin User Setup
-6. Create an IAM admin user.
-7. Attach the `AdministratorAccess` policy to the admin user.
-8. Enable MFA for the IAM admin user.
-9. Sign out from the root user.
-10. Sign in using the IAM admin account.
-
----
-
-### 🔹AWS CLI Installation & Configuration
-11. Install the AWS CLI on the local machine.
-12. Configure the AWS CLI using the IAM admin user’s access keys:
-   ```bash
-   aws configure
-   ```
-13. Verify CLI authentication:
-   ```bash
-   aws sts get-caller-identity
-   ```
-
----
-
-### 🔹EC2 Instance Creation
-14. Create a test EC2 instance using the AWS Management Console.
-15. Generate and download an EC2 key pair (`.pem` file).
-16. Configure a security group allowing SSH access (port 22).
-17. Launch the EC2 instance.
-
----
-
-### 🔹Connecting to EC2
-18. Connect to the instance using EC2 Instance Connect.
-19. Connect to the instance using an SSH client:
-   ```bash
-   ssh -i <keypair>.pem ec2-user@<public-ip>
-   ```
-20. Verify successful login and basic shell access.
-
----
-
-### 🔹Cleanup & Cost Management
-21. Exit the EC2 instance.
-22. Terminate the EC2 instance.
-23. Confirm that no running EC2 resources remain.
-
----
-
-## Note!
-- The root account is used **only** for billing and account-level configuration.
-- All operational tasks are performed using an IAM admin user.
-- All resources are terminated to avoid unnecessary costs.
+1. Create a security group with required inbound rules for SSH, HTTP, and ICMP.
+2. Launch an Amazon Linux EC2 instance.
+3. Launch an Ubuntu EC2 instance.
+4. Connect to the Amazon Linux instance using an SSH client from the local machine.
+5. Connect to the Ubuntu instance using EC2 Instance Connect.
+6. Verify internal network connectivity by pinging the Ubuntu instance's private IP from the Amazon Linux instance.
+7. Verify internal network connectivity by pinging the Amazon Linux instance's private IP from the Ubuntu instance.
+8. Install and enable the Nginx web server on the Ubuntu instance.
+9. Install and enable the Apache web server on the Amazon Linux instance.
+10. Create a simple "Hello World" web page displaying operating system information.
+11. Verify that the web servers are accessible from the internet using the public IP address.
+12. Confirm that the Ubuntu instance can access the web page hosted on the Amazon Linux instance.
+13. Confirm that the Amazon Linux instance can access the web page hosted on the Ubuntu instance.
